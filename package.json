@@ -1,0 +1,25 @@
+{
+  "name": "local-json-patch-service",
+  "version": "1.0.0",
+  "description": "本地 JSON Patch 文档修订与原子回滚服务",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "cli": "node dist/cli.js",
+    "demo": "npm run build && node dist/demo.js",
+    "test": "npm run build && node --test \"dist/test/*.test.js\""
+  },
+  "keywords": [
+    "json-patch",
+    "sqlite",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "latest",
+    "typescript": "latest"
+  }
+}
